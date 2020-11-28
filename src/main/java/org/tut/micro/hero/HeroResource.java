@@ -21,7 +21,7 @@ public class HeroResource {
     HeroService service;
 
     @GET
-    @Path("/random")
+    @Path("random")
     public Response getRandomHero() {
         Hero hero = service.findRamdomHero();
         LOGGER.info("Found random hero " + hero);
